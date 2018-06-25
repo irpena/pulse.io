@@ -1,0 +1,24 @@
+{
+  "npmScope": "pulse",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "pac-ui": {
+      "tags": []
+    },
+    "pic-ui": {
+      "tags": []
+    },
+    "demo": {
+      "tags": []
+    },
+    "demo-e2e": {
+      "tags": []
+    }
+  }
+}

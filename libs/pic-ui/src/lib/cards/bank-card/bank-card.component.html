@@ -1,0 +1,26 @@
+<ion-row>
+  <ion-col col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-4 offset-md-4 col-sm-6 offset-sm-3 col-12>
+    <div [ngClass]="{'card-check': true, 'active': active}" (click)="executeEmit()">
+      <div class="check"></div>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-8 offset-1 class="row-title">
+            <label class="card-title">
+              {{ title }}
+            </label>
+          </ion-col>
+          <ion-col col-3 class="row-img">
+            <img src="{{ icon }}" />
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-11 offset-1 class="row-content">
+            <label class="card-content">
+              No. {{ label }}
+            </label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-col>
+</ion-row>
