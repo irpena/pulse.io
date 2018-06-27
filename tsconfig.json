@@ -16,11 +16,11 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@pulse/pac-ui": [
-        "libs/pac-ui/src/index.ts"
-      ],
       "@pulse/pic-ui": [
         "libs/pic-ui/src/index.ts"
+      ],
+      "@pulse/psc-ui": [
+        "libs/psc-ui/src/index.ts"
       ]
     }
   },

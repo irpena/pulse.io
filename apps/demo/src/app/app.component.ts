@@ -7,8 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pulse';
+  example = `<pulse-workshop-card [title]="'Titulo'" [subtitle]="'Subtitulo'" (selected)="cardSelectedAction($event)"></pulse-workshop-card>`;
 
   executeEmit(){
     console.log("Se ejecuta evento");
+  }
+
+  cardSelectedAction(event){
+    
+    console.log(`la carta esta ${(event?'Seleccinada':'No Seleccionada')}`, event);
   }
 }

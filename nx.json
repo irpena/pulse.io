@@ -8,9 +8,6 @@
     "nx.json": "*"
   },
   "projects": {
-    "pac-ui": {
-      "tags": []
-    },
     "pic-ui": {
       "tags": []
     },
@@ -18,6 +15,9 @@
       "tags": []
     },
     "demo-e2e": {
+      "tags": []
+    },
+    "psc-ui": {
       "tags": []
     }
   }

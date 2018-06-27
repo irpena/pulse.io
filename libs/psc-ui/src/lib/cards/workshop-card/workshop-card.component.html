@@ -1,0 +1,11 @@
+<article  [ngClass]="{'workshop-card': true, 'workshop-card--active': isSelected}" (click)="toggle()">
+  <h3 [ngClass]="{'workshop-card__header': true, 'workshop-card__header--active': isSelected}" class="workshop-card__header">{{title}}</h3>
+  <h4 class="workshop-card__subtitle">{{subtitle}}</h4>
+  <ul class="workshop-card__body">
+    <li class="workshop-card__body__item">Item 1</li>
+    <li class="workshop-card__body__item">Item 2</li>
+    <li class="workshop-card__body__item">Item 3</li>
+    <li class="workshop-card__body__item">Item 4</li>
+
+  </ul>
+</article>

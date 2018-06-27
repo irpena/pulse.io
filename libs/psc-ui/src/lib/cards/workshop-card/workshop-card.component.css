@@ -1,0 +1,36 @@
+.workshop-card{
+    background: #EBF3AA;
+    padding: 1em;
+}
+
+.workshop-card--active{
+    background: #dddddd;
+}
+
+.workshop-card__header{
+    margin: 0;
+    color: #316757;
+}
+
+.workshop-card__header--active{
+    color: #32AB86;
+}
+
+.workshop-card__subtitle{
+    font-weight: normal;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;  
+    color: #32AB86;
+    border-bottom: 1px solid #32AB86;;
+}
+
+.workshop-card__body{
+    margin: 0;
+    padding: .5em;
+    list-style-type: none;
+}
+
+.workshop-card__body__item{
+    padding-left: 1em;
+}
