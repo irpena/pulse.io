@@ -5,6 +5,11 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   templateUrl: './workshop-card.component.html',
   styleUrls: ['./workshop-card.component.css']
 })
+ /**
+  * Example of usage:
+  * <example-url>http://localhost:4200/xº</example-url>
+  * <example-url>/demo/mysample.component.html</example-url>
+  */
 export class WorkshopCardComponent implements OnInit {
   private  _subtitle;
   public isSelected : boolean;
