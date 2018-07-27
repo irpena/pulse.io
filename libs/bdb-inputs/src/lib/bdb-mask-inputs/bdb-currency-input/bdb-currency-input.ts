@@ -28,9 +28,9 @@ import { BdbMaskProvider } from '../providers/bdb-mask/bdb-mask';
 })
 export class BdbCurrencyInputComponent implements ControlValueAccessor, OnInit {
 
-  private inputValue = '';
+  inputValue = '';
   customMask;
-  private mFocus;
+  mFocus;
 
   @Input() placeHolder = '';
   @Input() selectOnFocus = false;

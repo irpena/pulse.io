@@ -8,18 +8,19 @@ import { TextMaskModule } from 'angular2-text-mask';
 
 @NgModule({
   imports: [
-    CommonModule,
-    BdbCurrencyInputComponent,
-    BdbPhoneInputComponent,
-    BdbMaskProvider,
+    CommonModule,    
     TextMaskModule
   ],
-  declarations: [TestComponentComponent],
+  declarations: [TestComponentComponent,
+    BdbCurrencyInputComponent,
+    BdbPhoneInputComponent],
   exports: [
     BdbCurrencyInputComponent,
     BdbPhoneInputComponent,
-    BdbMaskProvider,
     TextMaskModule
+  ],
+  providers:[
+    BdbMaskProvider,
   ]
 })
 export class BdbMaskInputsModule { }

@@ -21,6 +21,9 @@
       ],
       "@pulse/psc-ui": [
         "libs/psc-ui/src/index.ts"
+      ],
+      "@pulse/bdb-inputs": [
+        "libs/psc-ui/src/index.ts"
       ]
     }
   },

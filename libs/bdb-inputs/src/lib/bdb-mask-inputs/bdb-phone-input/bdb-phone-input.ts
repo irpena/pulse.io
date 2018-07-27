@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter, forwardRef, OnInit, Renderer2, ViewChild, ElementRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { BdbMaskProvider } from '../../../providers/bdb-mask/bdb-mask';
 import createNumberMask from 'text-mask-addons/dist/createNumberMask';
+import { BdbMaskProvider } from '../providers/bdb-mask/bdb-mask';
 
 @Component({
   selector: 'bdb-phone-input',
@@ -26,7 +26,7 @@ import createNumberMask from 'text-mask-addons/dist/createNumberMask';
 })
 export class BdbPhoneInputComponent implements ControlValueAccessor, OnInit {
 
-  private inputValue = '';
+  inputValue = '';
   customMask;
 
   @Input() placeHolder: string;

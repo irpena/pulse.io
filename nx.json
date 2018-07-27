@@ -19,6 +19,9 @@
     },
     "psc-ui": {
       "tags": []
+    },
+    "bdb-inputs": {
+      "tags": []
     }
   }
 }

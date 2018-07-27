@@ -196,6 +196,46 @@
           }
         }
       }
+    },
+    "bdb-inputs": {
+      "root": "libs/bdb-inputs",
+      "sourceRoot": "libs/bdb-inputs/src",
+      "projectType": "library",
+      "prefix": "pulse",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/bdb-inputs/tsconfig.lib.json",
+            "project": "libs/bdb-inputs/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "libs/bdb-inputs/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/bdb-inputs/src/test.ts",
+            "tsConfig": "libs/bdb-inputs/tsconfig.spec.json",
+            "karmaConfig": "libs/bdb-inputs/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/bdb-inputs/tsconfig.lib.json",
+              "libs/bdb-inputs/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
